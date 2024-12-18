@@ -183,7 +183,7 @@ body {
 .title{
   font-size: 13px;
   
-  color: white;
+  color:rgba(255, 215, 0, 0.7);
 }
 
 /* ...existing code... */
