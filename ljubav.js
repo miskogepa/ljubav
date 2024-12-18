@@ -44,6 +44,9 @@ document.addEventListener('DOMContentLoaded', () => {
       else if (i === 2) {
         card.innerHTML = '<div class="card-info"><p class="title">Mama tatu po ruci mazi,<br>a tata sapuce nova godina dolazi<br>ona do nas dopuzi<br>i kaze u ruke me uzmi</p></div>';
       }
+      else if (i === 3) {
+        card.innerHTML = '<div class="card-info"><p class="title">Mama je miluje po kosi<br>i tiho sapuce da se ponosi<br>tata bocu nosi<br>od pica se zanosi!</p></div>';
+      }
       else {
         card.innerHTML = '<div class="card-info"><p class="title">magic...</p></div>';
       }
