@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   cardsContainer.classList.add('cards-container');
   document.getElementById('content-wrapper').appendChild(cardsContainer);
   const instructionContainer = document.getElementById('instruction-container');
+  const inputContainer = document.querySelector('.input-container');
 
   inputs.forEach((input, index) => {
     input.addEventListener('input', () => {
@@ -32,6 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('text-container').style.display = 'none';
     document.querySelector('.password').style.display = 'none';
     instructionContainer.style.display = 'block';
+    inputContainer.style.display = 'flex';
     cardsContainer.innerHTML = '';
     cardsContainer.classList.add('active');
     for (let i = 0; i < 6; i++) {
@@ -42,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (i === 0) {
         card.innerHTML = '<div class="card-info"><p class="title">Sedimo za prazničnim stolom, vatrometi sijaju,<br>mali zubici izbijaju,<br>srecni smo kao nikada do sada<br>dok gledamo buducu lepoticu grada!</p></div>';
       } else if (i === 1) {
-        card.innerHTML = '<div class="card-info"><p class="title">Gledamo u oka dva malena,<br>ona se smeje,<br>napolju sneg veje,<br>pogled nas njen greje!</p></div>';
+        card.innerHTML = '<div class="card-info"><p class="title">Gledamo u oka dva malena,<br><span>ona</span> se smeje,<br>napolju sneg ve<span>je</span>,<br>pogled nas njen greje!</p></div>';
       }
       else if (i === 2) {
         card.innerHTML = '<div class="card-info"><p class="title">Mama tatu po ruci mazi,<br>a tata sapuce nova godina dolazi<br>ona do nas dopuzi<br>i kaze u ruke me uzmi</p></div>';
@@ -52,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
       } else if (i === 4) {
         card.innerHTML = '<div class="card-info"><p class="title">Dok svet oko nas odbrojava poslednje<br>sekunde stare godine i dočekuje novu sa<br>osmehom i nadom ja zamisljam kako te<br>milujem bradom!</p></div>';
       } else if (i === 5) {
-        card.innerHTML = '<div class="card-info"><p class="title">Napolju cujem zvuke neke , milujem tvoje ruke meke.<br>Svetla trepere kroz prozor naš,<br>Uz poljubac prvi u ponoćni čas,<br>počinje godina u kojoj ceo svet je naš!</p></div>';
+        card.innerHTML = '<div class="card-info"><p class="title">Napolju cujem zvuke neke , milujem tvoje ruke meke.<br>Svetla trepere kroz prozor naš,<br>Uz poljubac prvi u ponoćni čas,<br>počinje godina u kojoj ceo <span>svet</span> je <span>nas!</span></p></div>';
       }
         
       else {
