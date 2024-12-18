@@ -35,7 +35,12 @@ document.addEventListener('DOMContentLoaded', () => {
     for (let i = 0; i < 6; i++) {
       const card = document.createElement('div');
       card.classList.add('card');
-      card.innerHTML = '<div class="card-info"><p class="title">magic...</p></div>';
+      card.id = `card-${i + 1}`;
+      if (i === 0) {
+        card.innerHTML = '<div class="card-info"><p class="title">Sedimo za prazničnim stolom, vatrometi sijaju,<br>mali zubici izbijaju,<br>srecni smo kao nikada do sada<br>dok gledamo buducu lepoticu grada!</p></div>';
+      } else {
+        card.innerHTML = '<div class="card-info"><p class="title">magic...</p></div>';
+      }
       cardsContainer.appendChild(card);
     }
   }
