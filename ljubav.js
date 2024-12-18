@@ -38,7 +38,13 @@ document.addEventListener('DOMContentLoaded', () => {
       card.id = `card-${i + 1}`;
       if (i === 0) {
         card.innerHTML = '<div class="card-info"><p class="title">Sedimo za prazničnim stolom, vatrometi sijaju,<br>mali zubici izbijaju,<br>srecni smo kao nikada do sada<br>dok gledamo buducu lepoticu grada!</p></div>';
-      } else {
+      } else if (i === 1) {
+        card.innerHTML = '<div class="card-info"><p class="title">Gledamo u oka dva malena,<br>ona se smeje,<br>napolju sneg veje,<br>pogled nas njen greje!</p></div>';
+      }
+      else if (i === 2) {
+        card.innerHTML = '<div class="card-info"><p class="title">Mama tatu po ruci mazi,<br>a tata sapuce nova godina dolazi<br>ona do nas dopuzi<br>i kaze u ruke me uzmi</p></div>';
+      }
+      else {
         card.innerHTML = '<div class="card-info"><p class="title">magic...</p></div>';
       }
       cardsContainer.appendChild(card);
