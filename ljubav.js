@@ -46,7 +46,12 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       else if (i === 3) {
         card.innerHTML = '<div class="card-info"><p class="title">Mama je miluje po kosi<br>i tiho sapuce da se ponosi<br>tata bocu nosi<br>od pica se zanosi!</p></div>';
+      } else if (i === 4) {
+        card.innerHTML = '<div class="card-info"><p class="title">Dok svet oko nas odbrojava poslednje<br>sekunde stare godine i dočekuje novu sa<br>osmehom i nadom ja zamisljam kako te<br>milujem bradom!</p></div>';
+      } else if (i === 5) {
+        card.innerHTML = '<div class="card-info"><p class="title">Napolju cujem zvuke neke , milujem tvoje ruke meke.<br>Svetla trepere kroz prozor naš,<br>Uz poljubac prvi u ponoćni čas,<br>počinje godina u kojoj ceo svet je naš!</p></div>';
       }
+        
       else {
         card.innerHTML = '<div class="card-info"><p class="title">magic...</p></div>';
       }
