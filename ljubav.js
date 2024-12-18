@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const cardsContainer = document.createElement('div');
   cardsContainer.classList.add('cards-container');
   document.getElementById('content-wrapper').appendChild(cardsContainer);
+  const instructionContainer = document.getElementById('instruction-container');
 
   inputs.forEach((input, index) => {
     input.addEventListener('input', () => {
@@ -30,6 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function displayCards() {
     document.getElementById('text-container').style.display = 'none';
     document.querySelector('.password').style.display = 'none';
+    instructionContainer.style.display = 'block';
     cardsContainer.innerHTML = '';
     cardsContainer.classList.add('active');
     for (let i = 0; i < 6; i++) {

@@ -178,3 +178,15 @@ body {
   
   color: white;
 }
+
+/* ...existing code... */
+#instruction-container {
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  opacity: 0;
+  display: none; /* Hide initially */
+  animation: fadeIn 2s forwards;
+  animation-delay: 1s;
+}
+/* ...existing code... */
