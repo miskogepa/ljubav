@@ -33,6 +33,11 @@ document.addEventListener('DOMContentLoaded', () => {
     cardsContainer.innerHTML = '';
     cardsContainer.classList.add('active');
     for (let i = 0; i < 6; i++) {
+      const cardWrapper = document.createElement('div');
+      cardWrapper.classList.add('card-wrapper');
+      const numberDiv = document.createElement('div');
+      numberDiv.classList.add('card-number');
+      numberDiv.textContent = i + 1;
       const card = document.createElement('div');
       card.classList.add('card');
       card.id = `card-${i + 1}`;
@@ -55,7 +60,9 @@ document.addEventListener('DOMContentLoaded', () => {
       else {
         card.innerHTML = '<div class="card-info"><p class="title">magic...</p></div>';
       }
-      cardsContainer.appendChild(card);
+      cardWrapper.appendChild(numberDiv);
+      cardWrapper.appendChild(card);
+      cardsContainer.appendChild(cardWrapper);
     }
   }
 });

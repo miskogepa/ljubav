@@ -136,8 +136,20 @@ body {
 .cards-container {
   display: none;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  gap: 20px; /* Increased gap for padding between cards */
   margin-top: 20px;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-number {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
 .cards-container .card {
