@@ -28,6 +28,8 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function displayCards() {
+    document.getElementById('text-container').style.display = 'none';
+    document.querySelector('.password').style.display = 'none';
     cardsContainer.innerHTML = '';
     cardsContainer.classList.add('active');
     for (let i = 0; i < 6; i++) {
