@@ -1,0 +1,25 @@
+/* From Uiverse.io by barisdogansutcu */ 
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #212121;
+}
+.password {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .password input {
+    width: 30px;
+    height: 40px;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 2px rgb(20, 181, 230);
+    font-size: 20px;
+    color: white;
+    outline: none;
+  }
